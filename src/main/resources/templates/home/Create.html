@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+</head>
+<body>
+<h1>Create a new Album</h1>
+
+<form action="/create" method="post">
+    <div class="form-group">
+        <label>Album's title</label>
+        <input type="text" name="title">
+    </div>
+
+    <div class="form-group">
+        <label>Artist</label>
+        <input type="text" name="artist">
+    </div>
+
+    <div class="form-group">
+        <label>Tracks</label>
+        <input type="text" name="tracks">
+    </div>
+
+    <div class="form-group">
+        <label>Release Date</label>
+        <input type="date" name="releaseDate">
+    </div>
+
+    <div class="form-group">
+        <label>Company</label>
+        <input type="text" name="company">
+    </div>
+
+
+    <div style="text-align: center">       <!-- Wrapper for the submit button -->
+        <input type="submit" value="Create new album" class="btn" id="btn-create">
+    </div>
+
+</form>
+</body>
+</html>
