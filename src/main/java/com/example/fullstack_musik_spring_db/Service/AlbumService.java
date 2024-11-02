@@ -21,4 +21,15 @@ public class AlbumService {
         albumRepo.addAlbum(a);
     }
 
+    public Album findAlbumById(int id) throws SQLException {
+        return albumRepo.findAlbumById(id);
+    }
+    public boolean deleteAlbum(int id) throws SQLException {
+        return albumRepo.deleteAlbum(id);
+    }
+
+    public void updateAlbum(Album album) throws SQLException {
+        albumRepo.updateAlbum(album);
+    }
+
 }

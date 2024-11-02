@@ -21,6 +21,7 @@
         <th>company</th>
     </tr>
     </thead>
+    
     <tbody>
     <tr th:each="album: ${albums}">
         <td th:text="${album.id}"/>
@@ -29,6 +30,20 @@
         <td th:text="${album.tracks}"/>
         <td th:text="${album.releaseDate}"/>
         <td th:text="${album.company}"/>
+        <td>
+            <a th:href="@{'/viewAlbum/' + ${album.id}}">
+                <button class ="btn-viewAlbum" id="btn-viewAlbum"> View an album </button>
+            </a>
+
+            <a th:href="@{'/deleteAlbum/' + ${album.id}}">
+                <button class ="btn-deleteAlbum" id="btn-deleteAlbum"> Delete an album </button>
+            </a>
+
+            <a th:href="@{'/updateAlbum/' + ${album.id}}">
+                <button class ="btn-updateAlbum" id="btn-updateAlbum"> Update an album </button>
+            </a>
+
+        </td>
 
     </tr>
     </tbody>
@@ -39,6 +54,8 @@
         <button class="btn-create btn" id="btn-create">Create a new Album</button>
     </a>
 </div>
+
+
 
 </body>
 </html>
