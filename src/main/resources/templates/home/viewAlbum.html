@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>view an album</title>
+  <link rel="stylesheet" type="text/css" href="/MyCSS.css">
 </head>
 <body>
 
@@ -14,6 +15,12 @@
 <p>Names of the tracks: <span th:text="${album.tracks}"/></p>
 <p>date of release: <span th:text="${album.releaseDate}"/></p>
 <p>Name of the company: <span th:text="${album.company}"/></p>
+
+<div class="return-button-container">
+  <a href="/">
+    <button class="btn" id="btn-return">Return to Home Page</button>
+  </a>
+</div>
 
 </body>
 </html>

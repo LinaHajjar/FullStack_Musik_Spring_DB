@@ -1,38 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 h1{
     text-align: center;
-    color: cornflowerblue;
+    color: aqua;
 }
 
 table{
     border-collapse: collapse;
     width: 80%;
     margin: auto;
-
 }
+
 th{
     background-color: lightblue;
 }
+
 td, th{
     border: 1px solid black;
     text-align: left;
     padding: 4px;
 }
 tr:nth-child(even){
-    background-color: lightgray;
+    background-color: burlywood;
 }
+
+
+.return-button-container{
+    display: flex; /* Enable flexbox on this container */
+    justify-content: flex-end; /* Aligns items to the right */
+    margin-top: 10px; /* Adds space above the return button */
+    width: 100%; /* Ensures it takes the full width of the page */
+}
+
 .btn{
-    background-color: darkseagreen;
+    background-color: blue;
     border: black;
     color: white;
     padding: 7px 10px;
     text-align: center;
 }
+
 .btn:hover{
     box-shadow: 2px 2px 2px #888888;
 }
+
+
+#btn-return {
+    background-color: lightcoral;
+    padding: 7px 10px;
+    color: darkolivegreen;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btn-return :hover {
+    box-shadow: 2px 2px 2px #888888;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
 #btn-create{
+    margin: 0 auto 10px; /* Centers it horizontally and adds bottom margin */
     margin-bottom: 10px;
-    background-color: green;
+    background-color: blueviolet;
 }
 
 .form-group {
@@ -47,7 +86,13 @@ label {
 
 input[type="text"],
 input[type="date"] {
-    width: 30%;
+    width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
+
+
+.submit-button-container{
+    margin-top: 20px;
+}
+

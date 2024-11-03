@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>update an album</title>
+    <link rel="stylesheet" type="text/css" href="/MyCSS.css">
 </head>
 <body>
   <h1>Update an album</h1>
@@ -16,6 +17,12 @@
     <input type="text" name="company" th:value="${album.company}">
     <input type="submit" value="Save changes">
   </form>
+
+  <div class="return-button-container">
+    <a href="/">
+      <button class="btn" id="btn-return">Return to Home Page</button>
+    </a>
+  </div>
 
 </body>
 </html>

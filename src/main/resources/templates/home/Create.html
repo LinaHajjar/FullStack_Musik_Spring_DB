@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Create</title>
-    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="stylesheet" type="text/css" href="/MyCSS.css">
 </head>
 <body>
 <h1>Create a new Album</h1>
@@ -35,10 +35,19 @@
     </div>
 
 
-    <div style="text-align: center">       <!-- Wrapper for the submit button -->
-        <input type="submit" value="Create new album" class="btn" id="btn-create">
+    <div class="submit-button-container">
+        <a href="/">
+            <button class="btn">Submit</button>
+        </a>
     </div>
 
 </form>
+
+<div class="return-button-container">
+    <a href="/">
+        <button class="btn" id="btn-return">Return to Home Page</button>
+    </a>
+</div>
+
 </body>
 </html>
